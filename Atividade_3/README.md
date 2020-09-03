@@ -7,10 +7,8 @@
 <p>A linguagem escolhida foi python com a biblioteca pytest utilizando o método de TDD.</p>
 <h2>Testes realizados:</h2>
 <ul>
-    <li>test_not_a_integer: testa se o número não for um integer</li>
-    <li>test_negative_integer: testa se o número for negativo</li>
-    <li>test_multiple_three: testa se o número é múltiplo de 3</li>
-    <li>test_multiple_five: testa se o número é múltiplo de 5</li>
-    <li>test_multiple_five_and_three: testa se o número é múltiplo de 3 e 5</li>
-    <li>test_not_multiples_five_or_three: testa se o número não for múltiplo de 3 ou 5</li>
+    <li>test_starts_with_a_letter: testa se o identificador começa com uma letra</li>
+    <li>test_contains_only_letters_or_digits: testa se o identificador contém somente letras ou digitos</li>
+    <li>test_string_length: testa se o identificador possui tamanho entre 1 e 6</li>
+    <li>test_null_string: testa se a string é None</li>
 </ul>
