@@ -1,5 +1,5 @@
 <h1> Atividade 4 </h1>
-<p>Construa casos de teste que cubram todas as sentenças e branches do código da simples função de cálculo de IR do seguinte arquivo: <a htref="https://github.com/otaviolemos/Imposto-de-renda/blob/master/src/imposto-renda.ts">https://github.com/otaviolemos/Imposto-de-renda/blob/master/src/imposto-renda.ts</a>
+<p>Construa casos de teste que cubram todas as sentenças e branches do código da simples função de cálculo de IR do seguinte arquivo: <a href="https://github.com/otaviolemos/Imposto-de-renda/blob/master/src/imposto-renda.ts">https://github.com/otaviolemos/Imposto-de-renda/blob/master/src/imposto-renda.ts</a>
 
 <p>Considere o que está no comentário como a especificação da função.</p>
 <h2>Descrição Solução:</h2>
