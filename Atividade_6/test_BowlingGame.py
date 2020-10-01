@@ -7,9 +7,15 @@ def roll_many(pins, n, g):
 
 
 def test_bowling_initial_values():
-
+    # mutant
     g = Game()
     assert(g.score()) == 0
+
+
+def test_bowling_plays_different_than_21():
+    # mutant
+    g = Game()
+    assert(len(g.rolls)) == 21
 
 
 def test_score_0_gutter_game():
