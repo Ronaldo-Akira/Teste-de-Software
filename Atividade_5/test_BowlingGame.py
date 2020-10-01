@@ -1,17 +1,49 @@
 from BowlingGame import Game
 
 
+def roll_many(pins, n, g):
+    for _ in range(n):
+        g.roll(pins)
+
+
 def test_score_0_gutter_game():
     g = Game()
-    for _ in range(20):
-        g.roll(0)
-
-    assert(g.get_score()) == 0
+    roll_many(0, 20, g)
+    assert(g.score()) == 0
 
 
 def test_all_one_game():
     g = Game()
-    for _ in range(20):
-        g.roll(1)
+    roll_many(1, 20, g)
+    assert(g.score()) == 20
 
-    assert(g.get_score()) == 20
+
+def test_spare():
+    g = Game()
+    roll_spare(g)
+    g.roll(3)
+    roll_many(0, 17, g)
+    assert(g.score()) == 16
+
+
+def test_strike():
+    g = Game()
+    roll_strike(g)
+    g.roll(5)
+    roll_many(0, 18, g)
+    assert(g.score()) == 20
+
+
+def test_perfect_game():
+    g = Game()
+    roll_many(10, 12, g)
+    assert(g.score()) == 300
+
+
+def roll_strike(g):
+    g.roll(10)
+
+
+def roll_spare(g):
+    g.roll(5)
+    g.roll(5)
