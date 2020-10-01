@@ -1,4 +1,4 @@
-<h1> Atividade 5 </h1>
+<h1> Atividade 5 - Bowling Kata</h1>
 <p>Kata de Boliche com TDD na sua linguagem preferida</p>
 
 <h2>Descrição Solução:</h2>
