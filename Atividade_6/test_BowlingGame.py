@@ -18,6 +18,25 @@ def test_bowling_plays_different_than_21():
     assert(len(g.rolls)) == 21
 
 
+def test_two_strikes():
+    g = Game()
+    roll_strike(g)
+    g.roll(3)
+    g.roll(3)
+    assert(g.score()) == 22
+    roll_strike(g)
+    roll_many(0, 16, g)
+    assert(g.score()) == 32
+
+
+def test_strike():
+    g = Game()
+    roll_strike(g)
+    g.roll(5)
+    roll_many(0, 18, g)
+    assert(g.score()) == 20
+
+
 def test_score_0_gutter_game():
     g = Game()
     roll_many(0, 20, g)
@@ -36,14 +55,6 @@ def test_spare():
     g.roll(3)
     roll_many(0, 17, g)
     assert(g.score()) == 16
-
-
-def test_strike():
-    g = Game()
-    roll_strike(g)
-    g.roll(5)
-    roll_many(0, 18, g)
-    assert(g.score()) == 20
 
 
 def test_perfect_game():
