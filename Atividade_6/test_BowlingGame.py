@@ -49,6 +49,19 @@ def test_all_one_game():
     assert(g.score()) == 20
 
 
+def test_two_spares():
+
+    g = Game()
+    roll_spare(g)
+    g.roll(5)
+    g.roll(0)
+    roll_spare(g)
+    g.roll(7)
+    g.roll(0)
+    roll_many(0, 12, g)
+    assert(g.score()) == 44
+
+
 def test_spare():
     g = Game()
     roll_spare(g)
